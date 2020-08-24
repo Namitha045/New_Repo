@@ -1,0 +1,123 @@
+/* Global styles
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+header{
+  background: #fca311;
+  text-align: center;
+  color: #fd151b;
+  font-family: 'Berkshire Swash', cursive;
+  background-image: url(KANCHI.jpg);
+  background-position:left;
+  font-size: 25px;
+  margin: 10px;
+  overflow: hidden;
+}
+h3{
+  color: #ffffff;
+}
+p{
+ color :#e63946;
+}
+ img {
+  width: 600px;
+  height: 600px;
+  float: right;
+  }
+figure {
+    display: inline-block;
+    border: 1px;
+    text-align: right;
+    padiing: 10px;
+  }
+figcaption{
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 1px;
+  text-align: center;
+}
+.content-wrap{
+  float: left;
+  text-align: center;
+  width : 200px;
+  font-family: 'Caveat', cursive;
+  font-size: 22px;
+  line-height: 1.5;
+}
+h2{
+  width: 200px;
+  font-family: 'Caveat', cursive;
+  float: left;
+  word-spacing: 10px;
+}
+button{
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  border: none;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  font-size: 10px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Other_links{
+  width: 200px;
+  height: 300px;
+  float: right;
+  text-align: justify;
+  list-style-position: inside;
+  font-family: 'Caveat', cursive;
+  list-style-type: disc;
+  font-size: 25px;
+}
+.contact-list{
+  list-style-type: none;
+  padding: 0;
+
+}
+.contact-list a{
+  padding: 10px;
+  display: inline-block;
+}
+.shortcut-icon {
+  display: inline-block;
+  margin: 15px;
+  float: left;
+  height: 60px;
+  width: auto;
+  border-radius: 50%;
+}
+footer {
+  background:  #dda15e;
+  color: #b5838d;
+  font-family: 'Barlow', sans-serif;
+  position: center;
+  bottom: 0;
+  }
+/* Responsive
+------------------------------------*/
+@media screen and (min-width:750px){
+  footer {
+    text-align: center;
+  }
+  .contact-list{
+    display: flex;
+    justify-content: center;
+    padding: 20px
+  }
+}
+@media screen and (max-width: 749px){
+  .contact-list a{
+    padding: 10px;
+  }
+  .Other_links{
+    display: block;
+  }
+  h3, p{
+    display: none;
+  }
+}
