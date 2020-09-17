@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+body{
+  background-image: url(home.jpg);
+  background-size: cover;
+}
+p{
+  margin: 20px 35px;
+  width: 600px;
+  height: 600px;
+  float: center;
+  text-align: center;
+  font-size: 35px;
+  color: #f0f3bd;
+  font-family: 'Courgette', cursive;
+}
+h4{
+  position:relative;
+  color: #f0f3bd;
+  float:left;
+  color: #f0f3bd;
+  padding: 15px;
+}
+
