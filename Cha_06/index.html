@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+    <link rel="icon" href="devchallenges.png" /><link rel="shortcut icon"type="image/x-icon" href="https://devchallenges.io/"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <title>Devchallenges</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        color: #606060;
+      }
+      h2{
+        position: relative;
+        left: 26px;
+        top:20px;
+        margin: 20px;
+      }
+      .contact{
+        font-size: 12px;
+        margin: 20px;
+        width: 350px;
+        height: 15px;
+        display: block;
+        color: #606060;
+        padding: 25px;
+      }
+      .shipping{
+        position: relative;
+        top: 120px;
+        margin: 20px;
+        width: 350px;
+        height: 15px;
+        font-size: 12px;
+        color: #606060;
+        display: block;
+        padding: 25px;
+      }
+      .contact input{
+        width: 100%;
+        margin: 6px 4px;
+        border-width: thin;
+        border-radius: 8px;
+        padding: 10px;
+      }
+      .shipping input{
+        width: 100%;
+        margin: 6px 1px;
+        border-width: thin;
+        border-radius: 8px;
+        padding: 8px;
+      }
+      input[name="email"]{
+        background-image: url("email-24px.svg");
+        background-position: 5px 5px;
+        background-repeat: no-repeat;
+      }
+      input[name="phone"]{
+       background-image: url("Call-24px.svg");
+       background-position: 5px 5px;
+       background-repeat: no-repeat;
+     }
+       input[name="name"]{
+        background-image: url("account_circle-24px.svg");
+        background-position: 5px 5px;
+        background-repeat: no-repeat;
+      }
+       input[name="address"]{
+        background-image: url("home-24px.svg");
+        background-position: 5px 5px;
+        background-repeat: no-repeat;
+     }
+        input[name="city"]{
+          background-image: url("apartment-24px.svg");
+          background-position: 5px 5px;
+          background-repeat: no-repeat;
+      }
+
+      input[name="country"]{
+       background-image: url("public-24px.svg");
+       background-position: 5px 8px;
+       left: -50px;
+       width: 45%;
+       position: relative;
+       top: 30px;
+       display: table-cell;
+       background-repeat: no-repeat;
+   }
+    input[name="code"]{
+     width: 45%;
+     position: relative;
+     top: -15px;
+     left: 18px;
+     display: table-cell;
+     float: right;
+     background-image: url("markunread_mailbox-24px.svg");
+     background-position: 5px 5px;
+     background-repeat: no-repeat;
+}
+.co{
+  position: relative;
+  top: 10px;
+  float: left;
+}
+.po{
+  position: relative;
+  top: -3px;
+  left: -30px;
+}
+   .save{
+     width: 300px;
+     position: relative;
+     top: 395px;
+     margin: 30px;
+     padding: 8px;
+     font-size: 10px;
+     font-weight: lighter;
+     font-family: "Poppins", sans-serif;
+   }
+   input[name ="shippingSave"]{
+     float: left;
+     position: relative;
+     top: -205px;
+     left: 175px;
+     padding: 4px;
+   }
+   button{
+     width: 115px;
+     height: 35px;
+     color: white;
+     text-align: center;
+     border: none;
+     border-radius: 8px;
+     position: relative;
+     background-color: orange;
+     font-family: "Poppins", sans-serif;
+     top: 20px;
+     left: 140px;
+   }
+   .checkoutBox{
+     position: relative;
+     top: -370px;
+     right: 620px;
+     background-color: #e5e4e2;
+     border-radius: 20px;
+     width: 350px;
+     height: 475px;
+     float: right;
+   }
+   .checkoutBox img{
+     position: relative;
+     top: 30px;
+     width: 100px;
+     height: 100px;
+     border-radius: 20%;
+     padding: 20px 20px;
+   }
+   .img2{
+     position: relative;
+     top: -140px;
+     left:-18px;
+     width: 100px;
+     height: 100px;
+     border-radius: 20%;
+     padding: 20px 20px;
+   }
+   .checkoutBox figcaption{
+     position: relative;
+     top: -90px;
+     left: 160px;
+     padding: 3px;
+     font-family: "Poppins", sans-serif;
+     font-size: 15px;
+   }
+   .checkoutBox p{
+     position: relative;
+     top: -110px;
+     left: 160px;
+     padding: 5px;
+     font-family: "Poppins", sans-serif;
+     font-size: 15px;
+   }
+    .img2 p{
+     position: relative;
+     top: -110px;
+     left: 160px;
+     padding: 3px;
+     font-family: "Poppins", sans-serif;
+     font-size: 15px;
+   }
+   .quantity.buttons_added input {
+     position: relative;
+     top: -125px;
+     left: 170px;
+     width: 25px;
+     display: inline-block;
+     text-align: right;
+     margin: 0;
+     vertical-align: top;
+     box-shadow: none;
+}
+.quantity .input-text.qty {
+    text-align: center;
+    padding-left: 15px;
+    border: none;
+    background-color: inherit;
+}
+  .charge{
+    width: 300px;
+    position: relative;
+    white-space: normal;
+    text-align: center;
+    top: 30px;
+    left: -160px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+  }
+  .charge .para2{
+    position: relative;
+    white-space: normal;
+    text-align: center;
+    top: -120px;
+    left: 170px;
+  }
+  .charge .new1{
+    position: relative;
+    top: -100px;
+    left: 180px;
+  }
+  .charge .new2{
+    position: relative;
+    top: -120px;
+    left: 180px;
+  }
+  footer{
+    position: relative;
+    left: 625px;
+    bottom: -400px;
+    }
+  @media screen and (max-width: 750px) {
+    .checkoutBox{
+    position: relative;
+    top: -390px;
+    left: 20px;
+    width: 325px;
+    float: left;
+  }
+    .contact{
+      position: relative;
+      top: 500px;
+      margin: 10px;
+      width: 275px;
+      height: 10px;
+      padding: 15px;
+    }
+    .shipping{
+      position: relative;
+      top: 650px;
+      margin: 10px;
+      width: 275px;
+      height: 10px;
+      padding: 15px;
+    }
+    .save{
+      width: 300px;
+      position: relative;
+      top: 955px;
+      left: 35px;
+      margin: 10px;
+    }
+    input[name ="shippingSave"]{
+      top: -235px;
+      left: -25px;
+      padding: 4px;
+    }
+    button{
+      position: relative;
+      top: 25px;
+      left: 35px;
+    }
+  }
+</style>
+  </head>
+  <body>
+     <h2>Checkout</h2>
+     <div class="contact">
+        <h4>Contact information</h4>
+        <label>E-mail</label> <input name="email" type="email" required placeholder="        Enter your Email..">
+        <label>Phone</label> <input name="phone" type="tel" required placeholder= "        Enter your phone..">
+    </div>
+    <div class="shipping">
+       <h4>Shipping address</h4>
+       <label>Full name</label> <input name="name" type="text" Value="        Rodney Cotton">
+       <label>Address</label> <input name="address" type="text" required placeholder= "        Your address..">
+       <label>City</label> <input name="city" type="text" required placeholder= "        Your city..">
+       <label class="co">Country</label> <input name="country" list="countries" required placeholder= "        Your country..">
+       <datalist id="countries">
+          <option value="India">
+          <option value="Canada">
+          <option value="USA">
+          <option value="Germany">
+      </datalist>
+       <label class="po">Postal code</label> <input name="code" type="text" required placeholder= "        Your postal code..">
+    </div>
+    <div class= "save">
+       <label>save this information for next time</label><input name ="shippingSave" type = "checkbox">
+       <button>Continue</button>
+   </div>
+   <div class="checkoutBox">
+         <img src="photo1.png">
+         <figcaption>Vintage Backbag</figcaption>
+         <p style="color:orange">$54.99 <s style="color:black; font-size:11px;">$94.99</s></p>
+        <div class="quantity buttons_added">
+	        <input type="button" value="-" class="minus"><input type="number" class="input-text qty text" value="1" min="1" max="5" inputmode=""><input type="button" value="+" class="plus">
+        </div>
+        <div class="img2">
+          <img src="photo2.png">
+          <figcaption>Levi Shoes</figcaption>
+          <p style="color:orange">$74.99 <s style="color:black; font-size:11px;">$124.99</s></p>
+        <div class="quantity buttons_added">
+	        <input type="button" value="-" class="minus"><input type="number" class="input-text qty text" value="1" min="1" max="5" inputmode=""><input type="button" value="+" class="plus">
+        </div>
+        <div class="charge">
+           <hr class="new1">
+           <p class="para1"><b>Shipping</b> <span style="padding-left:125px;"><b>$19</b></p>
+           <hr class="new2">
+           <p class="para2"><b>Total</b>  <span style="padding-left:125px;"><b>$148.98</b></p>
+        </div>
+     </div>
+  </div>
+  </body>
+  <footer>
+    Namitha045@DevChallenges.io
+  </footer>
+</html>
