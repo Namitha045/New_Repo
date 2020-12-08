@@ -127,7 +127,9 @@ footer{
     justify-content: flex-start;
   }
   .Yields {
-    border-style: none;
+    border-color: white;
+    box-shadow: 0px 0px;
+    border: 0px 0px;
   }
   .Yields ul{
     list-style: none;
@@ -212,6 +214,7 @@ br{
 }
 .source{
   width: 325px;
+  left: 45px;
 }
 body{
   margin:0;
