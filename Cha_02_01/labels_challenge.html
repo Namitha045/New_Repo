@@ -7,18 +7,29 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <title>Buttons Challenge</title>
+  <title>Labels Challenge</title>
 </head>
 <style>
+  #hover:hover{
+      border-color: black;
+    }
+  #focus{
+      border-color: blue;
+      box-shadow: 0 0 8px rgba(82,168,236,.6)
+    }
+  #focus2{
+      border-color: red;
+      box-shadow: 0 0 8px rgba(82,168,236,.6)
+      }
    #pimage{
     background-image:url("images/call-24px.svg");
     background-position: 10px 12px;
     background-repeat: no-repeat;
     }
     #pword{
-      background-image:url("images/padlock.svg");
-      background-position: 160px 12px;
-      background-repeat: no-repeat;
+    background-image:url("images/padlock.svg");
+    background-position: 140px 12px;
+    background-repeat: no-repeat;
     }
 </style>
 <body>
@@ -30,17 +41,17 @@
             <small><pre class="form-text mr-5"><code style="color:darkgrey; float:right;">&:focus;</code></pre></small>
       </div>
       <div class="px-4 mx-5 form-group row d-flex justify-content-around">
-          <div class="mr-sm-5 col-md-3 col-sm-2">
+          <div class="mr-sm-3 col-md-3 col-sm-2">
               <label class="form-label" for="label" style="color:grey;">Label</label>
-              <input class="form-control form-control-lg" type="text" style="border-color:grey;" placeholder="Placeholder">
+              <input class="form-control form-control-lg" type="text" style="border-color:grey" placeholder="Placeholder">
           </div>
-          <div class="ml-sm-2 col-md-3 col-sm-2">
+          <div class="ml-sm-5 col-md-3 col-sm-2">
               <label class="form-label" for="label" style="color:black;">Label</label>
-              <input class="form-control form-control-lg" type="text" style="border-color:black" placeholder="Placeholder">
+              <input class="form-control form-control-lg" type="text" id="hover" placeholder="Placeholder">
           </div>
           <div class="ml-sm-5 col-md-3 col-sm-2">
               <label class="form-label" for="label" style="color:blue;">Label</label>
-              <input class="form-control form-control-lg" type="text" style="border-color:blue" placeholder="Placeholder">
+              <input class="form-control form-control-lg form-control-active" type="text" id="focus" placeholder="Placeholder">
           </div>
       </div><!--form-group -->
       <div class="form-group px-5 mt-5 d-flex justify-content-around">
@@ -51,15 +62,15 @@
       <div class="px-4 mx-5 form-group row d-flex justify-content-around">
           <div class="mr-sm-5 col-md-3 col-sm-2">
               <label class="form-label text-danger" for="label">Label</label>
-              <input class="form-control is-invalid form-control-lg" type="text" style="border-color:red" placeholder="Placeholder">
+              <input class="form-control is-invalid form-control-lg" type="text" placeholder="Placeholder">
           </div>
           <div class="ml-sm-2 col-md-3 col-sm-2">
               <label class="form-label" for="label" style="color:black;">Label</label>
-              <input class="form-control form-control-lg" type="text" style="border-color:black" placeholder="Placeholder">
+              <input class="form-control form-control-lg" type="text" id="hover" placeholder="Placeholder">
           </div>
           <div class="ml-sm-5 col-md-3 col-sm-2">
               <label class="form-label text-danger" for="label">Label</label>
-              <input class="form-control is-invalid form-control-lg" type="text" style="border-color:red" placeholder="Placeholder">
+              <input class="form-control is-invalid form-control-lg" type="text" id="focus2" placeholder="Placeholder">
           </div>
       </div><!--form-group -->
       <div class="form-group px-5 mx-5 mt-5">
