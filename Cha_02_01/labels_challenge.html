@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Buttons Challenge</title>
+</head>
+<style>
+   #pimage{
+    background-image:url("images/call-24px.svg");
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    }
+    #pword{
+      background-image:url("images/padlock.svg");
+      background-position: 160px 12px;
+      background-repeat: no-repeat;
+    }
+</style>
+<body>
+  <div class="container">
+    <h2 class="px-5 my-5">Inputs</h2>
+      <div class="form-group px-5 d-flex justify-content-around">
+            <small><pre class="form-text mr-5"><code>&lt;Input /&gt;</code></pre></small>
+            <small><pre class="form-text mr-5"><code style="color:darkgrey; float:right;">&:hover;</code></pre></small>
+            <small><pre class="form-text mr-5"><code style="color:darkgrey; float:right;">&:focus;</code></pre></small>
+      </div>
+      <div class="px-4 mx-5 form-group row d-flex justify-content-around">
+          <div class="mr-sm-5 col-md-3 col-sm-2">
+              <label class="form-label" for="label" style="color:grey;">Label</label>
+              <input class="form-control form-control-lg" type="text" style="border-color:grey;" placeholder="Placeholder">
+          </div>
+          <div class="ml-sm-2 col-md-3 col-sm-2">
+              <label class="form-label" for="label" style="color:black;">Label</label>
+              <input class="form-control form-control-lg" type="text" style="border-color:black" placeholder="Placeholder">
+          </div>
+          <div class="ml-sm-5 col-md-3 col-sm-2">
+              <label class="form-label" for="label" style="color:blue;">Label</label>
+              <input class="form-control form-control-lg" type="text" style="border-color:blue" placeholder="Placeholder">
+          </div>
+      </div><!--form-group -->
+      <div class="form-group px-5 mt-5 d-flex justify-content-around">
+            <small><pre class="form-text mr-5"><code>&lt;Input error /&gt;</code></pre></small>
+            <small><pre class="form-text mr-5"><code style="color:darkgrey; float:right;">&:hover;</code></pre></small>
+            <small><pre class="form-text mr-5"><code style="color:darkgrey; float:right;">&:focus;</code></pre></small>
+      </div>
+      <div class="px-4 mx-5 form-group row d-flex justify-content-around">
+          <div class="mr-sm-5 col-md-3 col-sm-2">
+              <label class="form-label text-danger" for="label">Label</label>
+              <input class="form-control is-invalid form-control-lg" type="text" style="border-color:red" placeholder="Placeholder">
+          </div>
+          <div class="ml-sm-2 col-md-3 col-sm-2">
+              <label class="form-label" for="label" style="color:black;">Label</label>
+              <input class="form-control form-control-lg" type="text" style="border-color:black" placeholder="Placeholder">
+          </div>
+          <div class="ml-sm-5 col-md-3 col-sm-2">
+              <label class="form-label text-danger" for="label">Label</label>
+              <input class="form-control is-invalid form-control-lg" type="text" style="border-color:red" placeholder="Placeholder">
+          </div>
+      </div><!--form-group -->
+      <div class="form-group px-5 mx-5 mt-5">
+          <div class="mr-sm-5 col-md-3 col-sm-2">
+              <small><pre class="form-text mr-sm-5"><code>&lt;Input disabled/&gt;</code></pre></small>
+          </div>
+          <div class="mr-sm-5 col-md-3 col-sm-2">
+              <label class="form-label" for="label" style="color:grey;">Label</label>
+              <input class="form-control form-control-lg" type="text" placeholder="Placeholder" disabled>
+          </div>
+      </div><!--form-group -->
+      <div class="form-group px-sm-5 mt-5 d-flex justify-content-around">
+            <small><pre class="form-text mr-5"><code>&lt;Input helperText= "Some interesting text"/&gt;</code></pre></small>
+            <small><pre class="form-text mr-5"><code style="color:darkgrey; float:right;">&lt;Input helperText= "Some interesting text" error/&gt; </code></pre></small>
+      </div>
+      <div class="mx-5 form-group row d-flex justify-content-around">
+          <div class="col-md-3 col-sm-3">
+              <label class="form-label" for="label">Label</label>
+              <input class="form-control form-control-lg" type="text" placeholder="Placeholder">
+              <small class="form-text text-muted">Some interesting text</small>
+          </div>
+          <div class="col-md-3 col-sm-2">
+              <label class="form-label text-danger" for="label">Label</label>
+              <input class="form-control is-invalid form-control-lg" type="text" placeholder="Placeholder">
+              <small class="form-text text-danger">Some interesting text</small>
+          </div>
+      </div><!--form-group -->
+      <div class="form-group  px-sm-5 mt-5 d-flex justify-content-around">
+            <small><pre class="form-text"><code>&lt;Input startIcon/&gt;</code></pre></small>
+            <small><pre class="form-text"><code style="color:darkgrey; float:right;">&lt;Input endIcon/&gt; </code></pre></small>
+      </div>
+      <div class="mx-5 form-group row d-flex justify-content-around">
+          <div class="col-md-3 col-sm-3">
+              <label class="form-label" for="label">Label</label>
+              <input class="form-control form-control-lg" id="pimage" type="text" placeholder="     Placeholder">
+          </div>
+          <div class="col-md-3 col-sm-2">
+              <label class="form-label" for="label">Label</label>
+              <input class="form-control form-control-lg" id ="pword" type="text" placeholder=" Placeholder">
+          </div>
+      </div><!--form-group -->
+      <div class="form-group px-sm-5 mt-5 d-flex justify-content-around">
+            <small><pre class="form-text"><code>&lt;Input value="text"/&gt;</code></pre></small>
+      </div>
+      <div class="form-group row d-flex justify-content-around">
+          <div class="col-md-3 col-sm-2">
+              <label class="form-label" for="label">Label</label>
+              <input class="form-control form-control-lg" type="text" value="Text">
+          </div>
+      </div><!--form-group -->
+      <div class="form-group  px-sm-5 mt-5 d-flex justify-content-around">
+            <small><pre class="form-text"><code>&lt;Input size="sm"/&gt;</code></pre></small>
+            <small><pre class="form-text"><code style="color:darkgrey; float:right;">&lt;Input size="md"/&gt; </code></pre></small>
+      </div>
+      <div class="mx-5 form-group row d-flex justify-content-around">
+          <div class="col-md-3 col-sm-3">
+              <label class="form-label" for="label">Label</label>
+              <input class="form-control form-control-sm" type="text" placeholder="Placeholder">
+          </div>
+          <div class="col-md-3 col-sm-2">
+              <label class="form-label" for="label">Label</label>
+              <input class="form-control form-control-lg" type="text" placeholder="Placeholder">
+          </div>
+      </div><!--form-group -->
+      <div class="form-group px-sm-5 mt-5 d-flex justify-content-around">
+            <small><pre class="form-text"><code>&lt;Input fullWidth/&gt;</code></pre></small>
+      </div>
+      <div class="form-group row d-flex justify-content-around">
+          <div class="col-md-8 col-sm-10">
+              <label class="form-label" for="label">Label</label>
+              <input class="form-control" type="text" value="Text">
+          </div>
+      </div><!--form-group -->
+      <div class="form-group px-sm-5 mt-5 d-flex justify-content-around">
+            <small><pre class="form-text"><code>&lt;Input multiline row="4"/&gt;</code></pre></small>
+      </div>
+      <div class="form-group row d-flex justify-content-around">
+          <div class="col-md-3 col-sm-4">
+              <label class="form-label" for="label">Label</label>
+              <textarea class="form-control" rows=4 placeholder="Placeholder"></textarea>
+          </div>
+      </div><!--form-group -->
+  </div><!-- content container -->
+  <footer class="sticky-bottom d-flex justify-content-center">Namitha045@DevChallenges.io</footer>
+</body>
+</html>
