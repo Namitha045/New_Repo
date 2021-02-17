@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '9rqr@6-e+#1bfoqp2yqr@1ofua(d!*vu+e5y^yy52h^wp9xaq8'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -130,9 +130,9 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR
 
 #AWS VARS
-AWS_ACCESS_KEY_ID = "AKIAR4522EHAVZJUUJ6F"
-AWS_SECRET_ACCESS_KEY = "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"
-AWS_STORAGE_BUCKET_NAME = "django-portfolio-namitha"
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_KEY')
+AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_BUCKET_NAME')
 
 AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 AWS_LOCATION = 'static/'
