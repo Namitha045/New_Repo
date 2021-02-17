@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Some of my Learnings</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <style>
+        img{
+            height:275px;
+        }
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+            }
+        }
+        </style>
+  </head>
+  <body>
+<main>
+<div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+        <div class="col">
+          <div class="card shadow-sm py-2">
+            <img class="card-img-top my-3" src="{% static 'django-website.jpg' %}">
+             <div class="card-body">
+              <p class="card-text">This website is developed using Django and the source code<a href="#"> here</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+           <div class="card shadow-sm py-2">
+             <img class="card-img-top my-3" src="{% static 'django-restframework.png' %}">
+             <div class="card-body">
+              <p class="card-text"> Here is a simple API developed using Django restframe
+              <a href="https://young-brook-85762.herokuapp.com/"> work</a></p>
+             </div>
+           </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm my-5 py-3">
+             <img class="card-img-top" src="{% static 'dev-challenges.PNG' %}">
+             <div class="card-body">
+              <p class="card-text">These are Devchallenges.io pages developed using Html, Css and
+              <a href="https://devchallenges.io/profile/tTckbjqtr8kstJwQOB56"> Javascript</a></p>
+             </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm my-5 py-1">
+             <img class="card-img-top" src="{% static 'script.PNG' %}">
+             <div class="card-body">
+              <p class="card-text">Some of the python scripts used in cleansing operations on data generated from web logs 
+              and database
+               <a href="https://github.com/Namitha045/New_Repo/tree/master/Python_Projects"> operations</a></p>
+             </div>
+          </div>
+        </div>
+        <p class="card-text"><a href="{% url 'home' %}" class="btn btn-primary my-2">Back</a></p>
+     </div>
+    </div>
+</div>
+  </section>
+</main>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>    
+  </body>
+</html>
