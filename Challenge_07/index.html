@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Edie homepage</title>
+    <style>
+    html{
+      height: 100%;
+      width: 80%;
+      overflow-x: scroll;
+       }
+      body {
+        font-family: "Poppins", sans-serif;
+        height:80%;
+      }
+      h2{
+        position: relative;
+        float: left;
+        top: 15px;
+        margin: 0 15px;
+      }
+      .tabNav{
+        position: relative;
+        float: right;
+        padding: 20px;
+      }
+      .tabNav a{
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 15px;
+        color: black;
+      }
+      .catchy{
+        position: relative;
+        left: 300px;
+        top: 100px;
+        width: 380px;
+        float: left;
+
+      }
+      .tabNav a.icon{
+        display: none;
+      }
+      .catchy-img img{
+        position: relative;
+        top: 100px;
+        margin: 0 70px ;
+        border-radius: 20px;
+        float: left;
+      }
+      .moto{
+        position: relative;
+        top: 120px;
+        width: 352px;
+        left: 300px;
+        float: center;
+      }
+      .moto p{
+        position: relative;
+        margin: 5px;
+        top: -5px;
+        left: -5px;
+        margin-bottom: 25px;
+      }
+      .moto h3{
+        font-size:38px;
+      }
+
+     .form label{
+       font-weight: 100;
+       font-size: 12px;
+       color: grey;
+     }
+     .form input{
+       margin-top: 10px;
+       width: 250px;
+       height: 35px;
+       background-color: #F0F0F0;
+       border-radius: 10px;
+       border-style: none;
+     }
+     ::placeholder{
+       color: grey;
+     }
+     .form button{
+       position: relative;
+       left: -15px;
+       width: 65px;
+       height: 35px;
+       background-color: dodgerblue;
+       border-radius: 7px;
+       border-style: none;
+     }
+     h2{
+      padding: 6px;
+    }
+    .services{
+      width: 850px;
+      height: 700px;
+      border: 1px #F0F8FF;
+      padding: 5px;
+      box-sizing: border-box;
+      position: relative;
+      top: 120px;
+      left: 250px;
+    }
+    .services h3{
+      position: relative;
+      padding: 55px 5px;
+      width: 225px;
+      font-size: 25px;
+    }
+    .services-UX-design{
+      position: relative;
+      top: 10px;
+      width: 270px;
+      height: 300px;
+      left: -10px;
+      display: block;
+      border: 1px solid #F0F8FF;
+      box-sizing: content-box;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .services-UX-design::after{
+    z-index: -1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .services-UX-design:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    }
+    .services-UX-design:hover::after {
+      opacity: 1;
+        }
+    .services-UX-design i{
+      float: left;
+    }
+    .services-UX-design h2{
+      position: relative;
+      top: 55px;
+      left:-40px;
+    }
+    .services-UX-design a{
+      text-decoration: none;
+      color: black;
+      padding: 15px;
+    }
+    .services-UX-design p{
+      position: relative;
+      top: 30px;
+      left:15px;
+      padding-top: 45px;
+      padding-bottom: 25px;
+      width: 250px;
+    }
+    .services-UX-design input{
+      position: relative;
+      left: 20px;
+      width: 85px;
+      height: 20px;
+      background-color: #E0E0E0;
+      border-radius: 5px;
+      border-style: hidden;
+      text-align: center;
+      padding:5px;
+    }
+    .services-Frontend{
+      position: relative;
+      top: -290px;
+      width: 280px;
+      height: 300px;
+      left: 300px;
+      display: block;
+      box-sizing: content-box;
+      border: 1px solid #F0F8FF;
+      border-radius: 10px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .services-Frontend::after{
+     z-index: -1;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+     opacity: 0;
+     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .services-Frontend:hover {
+      -webkit-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1);
+    }
+    .services-Frontend:hover::after {
+        opacity: 1;
+    }
+    .services-Frontend i{
+      float:left;
+    }
+    .services-Frontend h2{
+      position: relative;
+      top:55px;
+      left:-40px;
+     }
+    .services-Frontend a{
+      text-decoration: none;
+      color: black;
+      padding: 15px;
+    }
+    .services-Frontend i:hover a:hover p:hover button:hover{
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      }
+    .services-Frontend p{
+      position: relative;
+      top: 50px;
+      left:20px;
+      width: 250px;
+      padding-bottom: 45px;
+    }
+    .services-Frontend input{
+      position: relative;
+      left: 20px;
+      width: 85px;
+      height: 20px;
+      background-color: dodgerblue;
+      border-radius: 5px;
+      border-style: hidden;
+      text-align: center;
+      padding:5px;
+    }
+     .services-Frontend ::placeholder{
+      color: white;
+    }
+
+    .services-backend{
+      position: relative;
+      top: -590px;
+      width: 270px;
+      height: 300px;
+      left: 620px;
+      display:block;
+      border: 1px solid #F0F8FF;
+      box-sizing: content-box;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .services-backend::after{
+     z-index: -1;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+     opacity: 0;
+     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .services-backend:hover {
+       box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      -webkit-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1);
+    }
+    .services-backend:hover::after {
+        opacity: 1;
+    }
+    .services-backend i{
+      float: left;
+     }
+     .services-backend h2{
+      position: relative;
+      top: 55px;
+      left:-40px;
+     }
+    .services-backend a{
+      text-decoration: none;
+      color: black;
+      padding: 15px;
+    }
+    .services-backend p{
+      position: relative;
+      top: 50px;
+      left: 10px;
+      width: 270px;
+      padding-bottom: 45px;
+    }
+    .services-backend input{
+      position: relative;
+      left: 20px;
+      width: 85px;
+      height: 20px;
+      background-color: #E0E0E0;
+      border-radius: 5px;
+      border-style: hidden;
+      text-align: center;
+      padding:5px;
+    }
+    .business{
+      position: relative;
+      top: 70px;
+      left: 200px;
+    }
+    .business h4{
+      position: relative;
+      top: 10px;
+      left: 80px;
+      width: 300px;
+    }
+    .business .img1 img{
+      width: 400px;
+      height: 375px;
+      position:relative;
+      top: 100px;
+      left: -100px;
+      border-radius: 15px;
+      padding: 5px;
+    }
+    .img1 figcaption{
+      width: 400px;
+      position: relative;
+      top: 110px;
+      left:90px;
+    }
+    .business .img2 img{
+      position: relative;
+      top: -450px;
+      left: 500px;
+      width: 400px;
+      height: 375px;
+      border-radius: 15px;
+    }
+    .img2 figcaption{
+      position: relative;
+      top:-430px;
+      left:505px;
+    }
+    .business .img3 img{
+      position: relative;
+      top: -200px;
+      left: 75px;
+      width: 400px;
+      height: 400px;
+      border-radius: 15px;
+      padding:5px;
+    }
+    .img3 figcaption {
+      position: relative;
+      top: -200px;
+      left: 90px;
+    }
+    .business .img4 img{
+      position: relative;
+      top: -750px;
+      left: 495px;
+      width: 400px;
+      height: 400px;
+      border-radius: 15px;
+      padding:5px;
+    }
+    .img4 figcaption{
+      width:400px;
+      position: relative;
+      top: -750px;
+      left: 500px;
+    }
+    .img4 p{
+      position: relative;
+      top: -710px;
+      left: 870px;
+    }
+  .team h4{
+      position: relative;
+      top:-490px;
+      width: 250px;
+    }
+  .team p{
+        position: relative;
+        top:-500px;
+        left:80px;
+      }
+ .images .person3{
+    position: relative;
+    border-radius: 15px;
+    top: -800px;
+    left:480px;
+    width:280px;
+    height: 280px;
+    }
+  .images .person1{
+       position: relative;
+       border-radius: 15px;
+       top: -1000px;
+       left: 490px;
+       width:190px;
+       height: 210px;
+       }
+  .images .person2{
+        position: relative;
+        border-radius: 15px;
+        top: -755px;
+        left: 295px;
+        width:220px;
+        height:230px;
+      }
+   .note{
+       position: relative;
+       top:-550px;
+       left: 50px;
+       width: 650px;
+       float:center;
+  }
+  .note img{
+      position: relative;
+      top:1px;
+      left:30px;
+      width: 75px;
+      height:75px;
+      border-radius: 5px;
+  }
+  .note figcaption{
+     position: relative;
+     top:-75px;
+     left: 120px;
+  }
+  .note alt{
+     position: relative;
+     top:-70px;
+     left: 120px;
+  }
+  footer{
+    height:350px;
+    width:1600px;
+    position: relative;
+    top:-300px;
+    background-color: black;
+    padding: 20px 20px;
+  }
+    footer .contact-list a{
+      text-decoration: none;
+      color: white;
+      position: relative;
+      left: 70px;
+      padding: 15px;
+    }
+    footer .contact-list li{
+      position: relative;
+      top: 40px;
+      margin: 10px;
+    }
+    footer .socialmedia{
+      position: relative;
+      top: -50px;
+      left: 400px;
+    }
+    footer .socialmedia h2{
+      position: relative;
+      top: -60px;
+      left: 70px;
+    }
+    footer .form1{
+      position: relative;
+      left: 800px;
+    }
+    footer .form1 label{
+      position: relative;
+      top: -105px;
+      left: 150px;
+      font-weight: 100;
+      font-size: 12px;
+      color: white;
+    }
+    footer .form1 input{
+      position: relative;
+      top:-70px;
+      margin-top: 5px;
+      width: 200px;
+      height: 35px;
+      background-color: #F0F0F0;
+      border-radius: 10px;
+      border-style: none;
+    }
+    ::placeholder{
+      color: grey;
+    }
+    footer .form1 button{
+      position: relative;
+      top:-70px;
+      left: -15px;
+      width: 65px;
+      height: 35px;
+      background-color: dodgerblue;
+      border-radius: 7px;
+      border-style: none;
+    }
+    footer .form1 p{
+      position: relative;
+      top: 20px;
+      left: -160px;
+    }
+@media screen and (max-width: 750px) {
+        html{
+          width:100%;
+          overflow-x:hidden;
+           }
+        .tabNav a{
+          display: none;
+        }
+        .tabNav a.icon {
+          position: relative;
+          top: 5px;
+          padding-right: 20px;
+          float: right;
+          display: block;
+          width: 5px;
+          }
+        .catchy{
+          position: relative;
+          left: 25px;
+          top: 85px;
+          float: left;
+          width: 255px;
+          font-size: 12px;
+          }
+      .catchy-img img{
+          position: relative;
+          top: 85px;
+          left: 25px;
+          margin: 5px 0;
+          width: 85%;
+          height: 130px;
+          float: center;
+          }
+      .moto{
+        position: relative;
+        left: 45px;
+        width: 280px;
+        font-size: 12px;
+      }
+      .form input{
+        width: 175px;
+      }
+      .services h3{
+        padding:5px;
+        position: relative;
+        top: 45px;
+        left: -205px;
+      }
+      .services-UX-design{
+        position: relative;
+        top: 55px;
+        left:-225px;
+      }
+      .services-Frontend{
+        position: relative;
+        top: 75px;
+        left:-225px;
+        width:270px;
+     }
+     .services-backend{
+       position: relative;
+       top: 95px;
+       left:-225px;
+       width:280px;
+       padding-bottom: 5px;
+     }
+     .business{
+       position: relative;
+       left:20px;
+     }
+     .business h4{
+       position: relative;
+       top:515px;
+       left:-170px;
+       width:400px;
+     }
+     .business .img1 img{
+       position: relative;
+       top:500px;
+       left:10px;
+       width:300px;
+       height:300px;
+     }
+    .business .img1 figcaption{
+      position: relative;
+      top:500px;
+      left:20px;
+    }
+     .business .img2 img{
+       position: relative;
+       top:550px;
+       left:10px;
+       width:300px;
+       height:300px;
+     }
+     .business .img2 figcaption{
+       position: relative;
+       top:550px;
+       left:20px;
+     }
+     .business .img3 img{
+       position: relative;
+       top:580px;
+       left:10px;
+       width:300px;
+       height:300px;
+     }
+     .business .img3 figcaption{
+       position: relative;
+       top:580px;
+       left:20px;
+     }
+     .business .img4 img{
+       position: relative;
+       top:590px;
+       left:10px;
+       width:300px;
+       height:300px;
+     }
+     .business .img4 figcaption{
+       position: relative;
+       top:590px;
+       left:20px;
+     }
+     .business .img4 p{
+       position: relative;
+       top:610px;
+       left:20px;
+     }
+     .team {
+       position: relative;
+       top:170px;
+       left:180px;
+     }
+     .team p{
+       position: relative;
+       top:500px;
+       left:-170px;
+     }
+     .images .person3{
+       position: relative;
+       top:750px;
+       left:20px;
+       width:150px;
+       height:125px;
+     }
+     .images .person1{
+       position: relative;
+       top:680px;
+       left:30px;
+       width:120px;
+       height:100px;
+     }
+     .images .person2{
+       position: relative;
+       top:685px;
+       left:185px;
+       width:125px;
+       height:100px;
+     }
+     .note{
+         width: 350px;
+         position: relative;
+         top:750px;
+         left: 10px;
+       }
+     footer{
+       position: relative;
+       top:800px;
+       height:650px;
+     }
+     footer .contact-list{
+       position: relative;
+       left: -80px;
+       top:-30px;
+     }
+     footer .socialmedia{
+       position: relative;
+       top: 125px;
+       left: -30px;
+     }
+     footer .form1{
+       position: relative;
+       top:290px;
+       left: -200px;
+     }
+     footer .form1 p{
+       position: relative;
+       top:40px;
+       left: 250px;
+     }
+}
+    </style>
+    </head>
+    <body>
+      <h2>Edie</h2>
+      <div class="tabNav" id="myTopNav">
+          <a href = "#home" class ='Home'>Home</a>
+          <a href = "#Services">Services</a>
+          <a href = "#Our Works">Our Works</a>
+          <a href = "#Clients">Clients</a>
+          <a href = "#Contact">Contact</a>
+          <a href ="javascript:void(0);" class="icon">
+              <i class="fa fa-bars fa-2x"></i>
+          </a>
+      </div>
+      <div class="catchy">
+          <p style="color:dodgerblue">Unhappy with your website?</p>
+          <h1>We create beautiful and fast web services</h1>
+      </div>
+      <div class="catchy-img">
+          <img src = "edie-homepage-master/heroImage.jpg">
+      </div>
+    <div id ="home" class ="moto">
+        <h3>Story,emotion and purpose</h3>
+        <p>We help transform your ideas into real world applications that will outperform your toughest competition and help you
+          achieve your strategic goals in short period of time. </p>
+        <div class="form">
+            <label for="">Want us to contact you?</label>
+              <div class="btn-input">
+                <input type="email" name="email" placeholder="    Email" />
+                  <button class="btn btn-blue" style="color:white">Join</button>
+              </div>
+       </div>
+    </div>
+    <div  id="Services" class=services>
+          <h3 > We offer high demand services </h3>
+      <div class="services-UX-design">
+          <a href="#">
+            <i class='far fa-edit' style='font-size:36px; color:dodgerblue'></i>
+            <h2 style="font-size:20px">UI/UX Design</h2>
+              <p style="font-size:15px">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit. Duis a metus ac bulla consequat aliquet id quis turpis.</p>
+               <input type="text" name="get started" placeholder="Get started"/>
+            </a>
+        </div>
+      <div class="services-Frontend">
+          <i class ='fas fa-code' style='font-size:36px; color:green'></i>
+          <a href="#"><h2 style="font-size:20px">Front End</h2>
+            <p style="font-size:15px"><br>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit. Duis a metus ac bulla consequat aliquet id quis turpis.</p>
+              <input type="text" name="get started" placeholder= "Get started"/>
+          </a>
+      </div>
+        <div class="services-backend">
+          <i class='fas fa-server' style='font-size:36px; color:red'></i>
+          <a href="#"><h2 style="font-size:20px">Back End</h2>
+            <p style="font-size:15px"><br>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit. Duis a metus ac bulla consequat aliquet id quis turpis.</p>
+              <input type="text" name="get started" placeholder="  Get started"/>
+          </a>
+        </div>
+      </div>
+    <div id ="Our Works" class ="business">
+          <h4 style="font-size:25px">Good design means good business</h4>
+        <div class="img1">
+          <img src="edie-homepage-master/smarthome.jpg">
+          <figcaption style='font-size:12px; font-weight:lighter'>Full stack application</figcaption>
+          <figcaption>Smart home dashboard</figcaption>
+        </div>
+        <div class="img2">
+          <img src="edie-homepage-master/onboard.png">
+          <figcaption style='font-size:12px; font-weight:lighter'>UX/UI design</figcaption>
+          <figcaption>Onboard application</figcaption>
+        </div>
+        <div class="img3">
+          <img src="edie-homepage-master/booking.png">
+          <figcaption style='font-size:12px; font-weight:lighter'>Mobile application</figcaption>
+          <figcaption >Booking system</figcaption>
+        </div>
+        <div class ="img4">
+          <img src="edie-homepage-master/juice-product.png">
+          <figcaption style='font-size:12px; font-weight:lighter'>Front end application</figcaption>
+          <figcaption>Juice product homepage</figcaption>
+          <p style= "font-size:20px;color:dodgerblue"><a style=" text-decoration: none"href="#">see more -></a></p>
+        </div>
+    <div class="team">
+          <h4 style="color:red">Meet the team</h4>
+          <h4 style='font-size:30px'>We are chilled and laid back team</h4>
+          <p class="para" style="font-size:15px">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+    </div>
+    <div class="images">
+          <img class="person3" src=edie-homepage-master/person3.png>
+          <img class="person1" src=edie-homepage-master/person1.png>
+          <img class="person2" src=edie-homepage-master/person2.png>
+    </div>
+    <div id="Clients" class="note">
+      <p style="font-size:25px;">"Fast and outstanding results. Edie understands their customer's needs. They have a young and talented team."</p>
+      <img src =edie-homepage-master/person4.png>
+      <figcaption style="font-weight:bold">Carlos Tran</figcaption>
+      <alt style="font-size:12px; font-weight:lighter">The Decorate Gatsby</alt>
+    </div>
+  </div>
+    <footer>
+      <section>
+        <ul id="Contact" class="contact-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="Our Works#">Our Works</a></li>
+          <li><a href="Clients#">Clients</a></li>
+          <li><a href="Contact#">Contact</a></li>
+        </ul>
+      <div class="socialmedia">
+        <h2 style="color:white">Edie</h2>
+        <a href='#'><img src ="edie-homepage-master/instagram.svg"></a>
+        <a href="#"><img src ="edie-homepage-master/linkedin.svg"></a>
+        <a href="#"><img src ="edie-homepage-master/twitter.svg"></a>
+      </div>
+        <div class="form1">
+            <label for="">Want us to contact you?</label>
+                <input type="email" name="email" placeholder="    Email" />
+                  <button class="btn btn-blue" style="color:white">Join</button>
+            <p style="color:white">Namitha045@DevChallenges.io</p>
+       </div>
+      </section>
+    </footer>
+  </body>
+  </html>

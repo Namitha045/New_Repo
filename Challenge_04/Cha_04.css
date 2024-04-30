@@ -1,0 +1,228 @@
+html{
+  height: 100%;
+  overflow: auto;
+}
+body{
+  position: relative;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.recipe{
+  width: 800px;
+  height: 400px;
+  font-family: 'Merriweather', serif;
+}
+.Yields{
+  border: 10px 10px;
+  box-shadow: 2px 2px;
+  border-color: #F0FFF0;
+  border-radius: 15px;
+  padding-top: 25px;
+  margin-left: 20px;
+  width: 180px;
+  height: 325px;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-stretch:extra-expanded;
+  position: absolute;
+  top: 700px;
+  right: -50px;
+}
+.main{
+  font-family: 'Montserrat', sans-serif;
+  width: 590px;
+  margin-left: 4px;
+}
+label{
+  white-space: pre-wrap;
+}
+p{
+  width: 300px;
+  height: 75px;
+  font-weight:bold;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+h1{
+  font-size: 35px;
+}
+.tagline{
+  width: 600px;
+  text-align: left;
+  font-weight: lighter;
+  margin: 10px, 10px;
+  padding: 10px;
+}
+ol {
+  list-style: none;
+  counter-reset: item;
+  margin-left: 5px;
+  display: block;
+  width: 500px;
+}
+li {
+  counter-increment: item;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  white-space: pre;
+}
+li:before {
+  margin-right: 10px;
+  content: counter(item);
+  background: orange;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  width: 1.8em;
+  text-align:center;
+  display: inline-block;
+}
+.Yields img{
+  width: 30px;
+  padding-right: 10px;
+  float: left;
+}
+.source{
+  width:500px;
+  font-weight: lighter;
+  float:center;
+  font-size: 15px;
+}
+footer{
+  position: relative;
+  bottom: 0;
+  left: 250px;
+  bottom: -5px;
+  }
+@media screen and (max-width: 750px) {
+  footer{
+      text-align: center;
+      font-size: small;
+      position: absolute;
+      bottom: -2475px;
+      left: 90px;
+      }
+  .recipe{
+      width: 350px;
+      height: 225px;
+      border-radius: 8px;
+    }
+  h1{
+    font-size: 25px;
+    width: 300px;
+  }
+  .tagline img{
+    float: left;
+    width: 13px;
+    padding: 3px;
+  }
+  .tagline{
+    width: 350px;
+    height: 100px;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .Yields {
+    border-color: white;
+    box-shadow: 0px 0px;
+    border: 0px 0px;
+  }
+  .Yields ul{
+    list-style: none;
+    letter-spacing: normal;
+    padding: 0;
+  }
+  .Yields ul:first-child{
+    position: absolute;
+    top: -850px;
+    right: 350px;
+    padding: 2px;
+    width: 4px;
+  }
+  .Yields ul:nth-child(2) {
+    position: absolute;
+    top: -850px;
+    right: 310px;
+    float: right;
+    width: 5px;
+  }
+  .Yields ul:nth-child(4) {
+    position: absolute;
+    top: -787px;
+    right: 350px;
+    float: right;
+    width: 5px;
+  }
+  .Yields ul:nth-child(5) {
+    position: absolute;
+    top: -787px;
+    right: 310px;
+    float: right;
+    width: 5px;
+  }
+  .Yields ul:nth-child(7) {
+    position: absolute;
+    top: -787px;
+    right: 230px;
+    float: right;
+    width: 5px;
+  }
+  .Yields ul:nth-child(8) {
+    position: absolute;
+    top: -787px;
+    right: 190px;
+    float: right;
+    width: 5px;
+    padding: 1px;
+  }
+  .Yields ul:nth-child(10) {
+    position: absolute;
+    top: -787px;
+    right: 120px;
+    float: right;
+    width: 5px;
+    padding: 1px;
+  }
+  .Yields ul:last-child{
+    position: absolute;
+    top: -787px;
+    right: 80px;
+    float: right;
+    width: 5px;
+    padding: 1px;
+  }
+  .main{
+    position: absolute;
+    top: 600px;
+    width: 350px;
+    font-size: 16px;
+  }
+  .recipeList li{
+    width: 325px;
+    height: 50px;
+    display: inline-block;
+    text-align:left;
+    padding: 3px;
+    white-space:pre-line;
+  }
+br{
+  display: none;
+}
+.source{
+  width: 325px;
+  left: 45px;
+}
+body{
+  margin:0;
+}
+  }
+@media screen and (min-width: 749px) {
+  .Yields{
+    padding-left: 20px;
+    position: absolute;
+    left: 600px;
+  }

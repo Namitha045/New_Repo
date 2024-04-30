@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Buttons Challenge</title>
+</head>
+<style>
+    html, body {
+    height: 100%;
+    }
+    #fill {
+    min-height: 100%;
+    height: 100%;
+   }
+   #btn button:hover{
+     background-color:darkgrey;
+     color:grey;
+   }
+   #btn2 button{
+     color:blue; background-color:#F0F8FF;
+   }
+   #btn2 button:hover{
+    background-color:grey;
+   }
+   @media screen and (max-width: 1025px) {
+     #fill{
+       display:none;
+     }
+     #bp{
+       margin-left:5px;
+     }
+   }
+
+</style>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <section class="col-sm-3 py-2">
+        <nav class="py-5 ml-5 navbar bg-light navbar-light" id="fill">
+            <img class="mx-3" src="images/dev_logo.PNG" alt="Logo" style="width:150px;">
+            <ul class="navbar-nav mt-5 mb-5" id="fill">
+              <li class="px-sm-5 nav-item mt-3 mb-3"><a class="nav-link" href="#">Colors</a></li>
+              <li class="px-sm-5 nav-item mt-3 mb-3"><a class="nav-link" href="#">Typography</a></li>
+              <li class="px-sm-5 nav-item mt-3 mb-3"><a class="nav-link" href="#">Spaces</a></li>
+              <li class="px-sm-5 nav-item active mt-3 mb-3"><a class="nav-link" href="#">Buttons</a></li>
+              <li class="px-sm-5 nav-item mt-3 mb-3"><a class="nav-link" href="labels_challenge.html">Inputs</a></li>
+              <li class="px-sm-5 nav-item mt-3 mb-3"><a class="nav-link" href="#">Grid</a></li>
+            </ul>
+          </nav>
+       </section>
+      <section class="col-sm-6 col-lg-8">
+            <h2 class="px-5 my-5 py-3">Buttons</h2>
+            <div class="px-5 d-flex justify-content-around">
+                  <small><pre class="mr-5 px-4"><code>&lt;Button/&gt;</code></pre></small>
+                  <small><pre class="mr-5"><code style="color:darkgrey; float:right;">&:hover; &:focus</code></pre></small>
+            </div>
+            <div class="px-5 d-flex justify-content-around">
+                <button class="btn mr-5 mb-5" style="background-color:lightgrey;">Default</button>
+              <section id="btn">
+                <button class="btn mr-5 mb-5" style="background-color:darkgrey; float:right;">Default</button>
+              </section>
+            </div>
+            <div class="px-5 d-flex justify-content-around">
+              <small><pre class="mr-5"><code>&lt;Button variant="outline"/&gt;</code></pre></small>
+              <small><pre class="px-sm-5 mr-5"><code style="color:darkgrey; float:right;">&:hover; &:focus</code></pre></small>
+            </div>
+            <div class="px-5 d-flex justify-content-around">
+              <button class="btn mr-5 btn-outline-primary">Default</button>
+              <button class="btn btn-outline-primary mr-5" style="background-color:#F0F8FF;">Default</button>
+            </div>
+            <div class="px-5 d-flex justify-content-around">
+              <small><pre class="mt-5 mr-5"><code>&lt;Button variant="text"/&gt;</code></pre></small>
+              <small><pre class="mr-5 px-sm-5 mt-5"><code style="color:darkgrey; float:right;">&:hover; &:focus</code></pre></small>
+            </div>
+            <div class="px-5 d-flex justify-content-around">
+              <button class="btn mr-5 mb-5" style="color:blue;">Default</button>
+              <section id="btn2">
+                <button class="btn btn-outline-none mb-5 mr-5">Default</button>
+              </section>
+           </div>
+           <div class="px-5 d-flex justify-content-around">
+             <small><pre class="ml-4 mr-5"><code>&lt;Button disableshadow/&gt;</code></pre></small>
+          </div>
+          <div class="px-5 mx-5 d-flex justify-content-around">
+            <button class="btn btn-primary shadow-none">Default</button>
+          </div>
+          <div class="px-5 d-flex justify-content-around">
+            <small><pre class="mt-5"><code>&lt;Button disabled/&gt;</code></pre></small>
+            <small><pre class="mt-5 ml-5"><code style="color:grey; float:right;">&lt;Button variant="text" disabled/&gt;</code></pre></small>
+          </div>
+          <div class="px-5 d-flex justify-content-around">
+            <button class="btn btn-disabled mr-5 mb-5" style="background-color:lightgrey;">Disabled</button>
+            <button class="btn btn-outline-none mr-5 mb-5" style="color:grey;">Disabled</button>
+         </div>
+           <div class="px-sm-5 d-flex justify-content-around">
+             <small><pre class="mr-sm-5"><code>&lt;Button startIcon="local_grocery_store"/&gt;</code></pre></small>
+             <small><pre class="mr-sm-5"><code>&lt;Button endIcon="local_grocery_store" /&gt;</code></pre></small>
+           </div>
+           <div class="px-5 d-flex justify-content-around">
+             <button class="btn btn-primary mb-5"><i class="fa fa-shopping-cart"></i>   Default</button>
+             <button class="mr-5 btn btn-primary mb-5">Default  <i class="fa fa-shopping-cart"></i></button>
+           </div>
+           <div class="px-5 d-flex justify-content-around">
+             <small><pre><code>&lt;Button sz="sm"/&gt;</code></pre></small>
+             <small><pre class="mr-5" id="bp"><code>&lt;Button sz="md"/&gt;</code></pre></small>
+             <small><pre class="px-1 mr-5"><code>&lt;Button sz="lg"/&gt;</code></pre></small>
+           </div>
+           <div class="px-5 d-flex justify-content-around">
+             <button class="btn btn-primary btn-sm mb-5" id="bp">Default</button>
+             <button class="btn btn-primary btn-md mb-5" id="bp">Default</button>
+             <button class="btn btn-primary btn-lg mr-5 mb-5" id="bp">Default</button>
+           </div>
+           <div class="px-5 d-flex justify-content-around">
+             <small><pre class="mr-4"><code>&lt;Button color="default"/&gt;</code></pre></small>
+             <small><pre class="mr-4"><code>&lt;Button color="primary"/&gt;</code></pre></small>
+             <small><pre class="mr-4"><code>&lt;Button color="secondary"/&gt;</code></pre></small>
+             <small><pre class="mr-4"><code>&lt;Button color="danger"/&gt;</code></pre></small>
+           </div>
+           <div class="px-5 d-flex justify-content-around">
+             <button class="btn btn-primary-outline-none mr-5 mb-5" style="background-color:lightgrey;">Default</button>
+             <button class="btn btn-primary mx-5 mb-5" style="background-color:blue;">Default</button>
+             <button class="btn btn-secondary mx-5 mb-5" style="background-color:grey;">Secondary</button>
+             <button class="btn btn-danger mx-5 mb-5" style="background-color:red;">Danger</button>
+           </div>
+           <div class="px-4 d-flex justify-content-left">
+             <small><pre class="ml-5"><code>&:hover; &:focus</code></pre></small>
+           </div>
+             <div class="px-5 d-flex justify-content-around">
+              <section id="btn">
+               <button class="btn btn-primary-outline-none mr-5 mb-5" style="background-color:lightgrey;">Default</button>
+             </section>
+               <button class="btn btn-primary mx-5 mb-5">Default</button>
+               <button class="btn btn-secondary mx-5 mb-5">Secondary</button>
+               <button class="btn btn-danger mx-5 mb-5">Danger</button>
+             </div>
+      </section>
+  </div><!-- row -->
+</div><!-- content container -->
+<footer class="sticky-bottom d-flex justify-content-center">Namitha045@DevChallenges.io</footer>
+
+</body>
+</html>

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Portfolio</title>
+    <style>
+    /* { border: 1px solid black; }*/
+    html, body{
+      height:100%;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #F5F5F5;
+      overflow-x: scroll;
+    }
+    a, button{
+      cursor:pointer;
+    }
+    img{
+       transition: transform .2s;
+    }
+    img:hover{
+      -ms-transform: scale(1.25); /* IE 9 */
+      -webkit-transform: scale(1.25);
+      transform: scale(1.25);
+    }
+    .personal-details{
+      width: 900px;
+      height: 250px;
+      position: relative;
+      left: 300px;
+      top: 55px;
+      box-sizing: border-box;
+      background-color: #FFFAFA;
+      border-radius: 15px;
+    }
+    .personal-details .Mypic{
+      width: 200px;
+      height: 200px;
+      border-radius: 15px;
+      left:20px;
+      margin: 20px 15px;
+    }
+    .personal-details figcaption{
+      position: relative;
+      top: -190px;
+      left: 240px;
+    }
+    .personal-details .email{
+     position: relative;
+     width: 175px;
+     top:-270px;
+     float: right;
+     right: 40px;
+     }
+     .personal-details .email img{
+      position: relative;
+      top:10px;
+      float: right;
+      right: 180px;
+      }
+     .personal-details .phone{
+      position: relative;
+      width: 175px;
+      top:-225px;
+      float: right;
+      right:-135px;
+    }
+    .personal-details .phone img{
+    position: relative;
+    top:10px;
+    float:right;
+    right:180px;
+    }
+    .personal-details .intro p{
+      position: relative;
+      top:-160px;
+      left:240px;
+      font-size: 12px;
+      color:grey;
+    }
+    .slidecontainer{
+      position: relative;
+      top: 80px;
+      left:300px;
+      width: 350px;
+      height: 300px;
+      box-sizing: border-box;
+      background-color: #FFFAFA;
+      border-radius: 12px;
+      text-align: left;
+      padding: 15px 45px;
+    }
+    .container {
+      width: 250px;
+      height: 8px;
+      background-color: #ddd;
+      border-radius: 5px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+    .container ::after{
+        z-index: -1;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+    .container :hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+      }
+    .container::after {
+        opacity: 1;
+          }
+      .skills{
+        text-align: left;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .html{
+        width:90%;
+        background-color: #2196F3;
+        border-radius: 12px;
+      }
+      .Js{
+        width:70%;
+        background-color: #2196F3;
+        border-radius: 12px;
+      }
+      .css{
+        width:80%;
+        background-color: #2196F3;
+        border-radius: 12px;
+      }
+      .react{
+        width:55%;
+        background-color: #2196F3;
+        border-radius: 12px;
+      }
+      .project{
+        position: relative;
+        top: -220px;
+        left:670px;
+        width:530px;
+        height:60px;
+        box-sizing: border-box;
+        background-color: #FFFAFA;
+        border-radius: 15px;
+        padding: 8px 15px;
+      }
+      .project1{
+        position: relative;
+        top: -200px;
+        left: 670px;
+        width:530px;
+        height: 310px;
+        box-sizing: border-box;
+        background-color: #FFFAFA;
+        border-radius: 15px;
+        padding: 10px 15px;
+      }
+      .project1 img{
+        padding: 10px;
+        width: 160px;
+        height: 240px;
+        border-radius: 25px;
+        float:left;
+      }
+      .project1 p{
+        position: relative;
+        top: 15px;
+        width: 300px;
+        float: right;
+      }
+      .project1 button{
+        position: relative;
+        top: 35px;
+        left: 15px;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        text-align: center;
+        padding: 5px 5px;
+        border-style: solid;
+      }
+      .project1 a{
+        text-decoration: none;
+        box-sizing: border-box;
+        color:black;
+      }
+      .project2{
+        position: relative;
+        top: -180px;
+        left: 670px;
+        width:530px;
+        height: 310px;
+        box-sizing: border-box;
+        background-color: #FFFAFA;
+        border-radius: 15px;
+        padding: 10px 15px;
+      }
+      .project2 img{
+        padding: 10px;
+        width: 160px;
+        height: 240px;
+        border-radius: 25px;
+        float:left;
+      }
+      .project2 p{
+        position: relative;
+        top: 15px;
+        width: 300px;
+        float: right;
+      }
+      .project2 button{
+        position: relative;
+        top: 35px;
+        left: 15px;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        text-align: center;
+        padding: 5px 5px;
+        border-style: solid;
+      }
+      .project2 a{
+        text-decoration: none;
+        box-sizing: border-box;
+        color:black;
+      }
+      .project3{
+        position: relative;
+        top: -160px;
+        left: 670px;
+        width:530px;
+        height: 310px;
+        box-sizing: border-box;
+        background-color: #FFFAFA;
+        border-radius: 15px;
+        padding: 10px 15px;
+      }
+      .project3 img{
+        padding: 10px;
+        width: 160px;
+        height: 240px;
+        border-radius: 25px;
+        float:left;
+      }
+      .project3 p{
+        position: relative;
+        top: 15px;
+        width: 300px;
+        float: right;
+      }
+      .project3 button{
+        position: relative;
+        top: 35px;
+        left:15px;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        text-align: center;
+        padding: 5px 5px;
+        border-style: solid;
+      }
+      .project3 a{
+        text-decoration: none;
+        box-sizing: border-box;
+        color:black;
+      }
+      .Experience{
+        position: relative;
+        top: -890px;
+        left: 300px;
+        width: 350px;
+        height: 730px;
+        box-sizing: border-box;
+        background-color: #FFFAFA;
+        border-radius: 15px;
+        text-align: left;
+        padding: 15px 18px;
+      }
+      .Experience p{
+        padding-bottom: 10px;
+      }
+      .Experience h5{
+        margin-left: 55px;
+      }
+      .Experience img{
+        width: 45px;
+        height:45px;
+      }
+      .Hobbies{
+        position: relative;
+        top: -870px;
+        left: 300px;
+        width: 350px;
+        height: 570px;
+        box-sizing: border-box;
+        background-color: #FFFAFA;
+        border-radius: 15px;
+        text-align: left;
+        padding: 15px 18px;
+      }
+      .Hobbies img{
+        width: 300px;
+        height: 140px;
+        border-radius: 8px;
+      }
+      .blog{
+        position: relative;
+        top: -1450px;
+        left: 670px;
+        width: 530px;
+        height: 60px;
+        box-sizing: border-box;
+        background-color: #FFFAFA;
+        border-radius: 15px;
+        padding: 10px 18px;
+      }
+      .Blogs{
+        position: relative;
+        top: -1430px;
+        left: 670px;
+        width:530px;
+        height:500px;
+        box-sizing: border-box;
+        background-color: #FFFAFA;
+        border-radius: 15px;
+        padding: 8px 15px;
+      }
+      .Blogs p{
+        padding: 10px 12px;
+      }
+      .Blogs img{
+        width: 370px;
+        height: 170px;
+        border-radius: 15px;
+        padding-left: 40px;
+      }
+      footer{
+        position: relative;
+        top: -1400px;
+        left: 625px;
+      }
+    @media screen and (max-width: 850px) {
+      .personal-details{
+        width: 350px;
+        height: 300px;
+        position: relative;
+        left: 25px;
+        top: 25px;
+      }
+      .personal-details .Mypic{
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+        left:20px;
+        margin: 8px 10px;
+      }
+      .personal-details figcaption{
+        position: relative;
+        top:-100px;
+        left: 140px;
+      }
+      .personal-details br{
+        display: none;
+      }
+      .personal-details .intro p{
+        position: relative;
+        top:-50px;
+        left:40px;
+        width: 250px;
+      }
+      .personal-details .email{
+       position: relative;
+       top:-90px;
+       right: 20px;
+       }
+       .personal-details .email img{
+        position: relative;
+        top:10px;
+        right: 180px;
+        }
+       .personal-details .phone{
+        position: relative;
+        top: -60px;
+        left:150px;
+      }
+      .personal-details .phone img{
+      position: relative;
+      top:10px;
+      right:180px;
+      }
+      .slidecontainer{
+        position: relative;
+        top:40px;
+        left:30px;
+        padding: 10px 25px;
+      }
+      .Experience{
+        position: relative;
+        top: -1235px;
+        left: 30px;
+      }
+      .Hobbies{
+        position: relative;
+        top: -1220px;
+        left: 30px;
+        height: 570px;
+      }
+      .project{
+        position: relative;
+        top: 1400px;
+        left:30px;
+        width:350px;
+        height:70px;
+      }
+      .project1{
+        position: relative;
+        top: 1430px;
+        left: 30px;
+        width: 350px;
+        height: 410px;
+      }
+      .project1 img{
+        padding: 10px;
+        width: 120px;
+        height: 140px;
+        float:left;
+      }
+      .project1 button{
+        margin-bottom: 10px;
+      }
+      .project2{
+        position: relative;
+        top: 1460px;
+        left: 30px;
+        width: 350px;
+        height: 410px;
+      }
+      .project2 img{
+        padding: 10px;
+        width: 120px;
+        height: 140px;
+        float:left;
+      }
+      .project2 button{
+        margin-bottom: 10px;
+      }
+      .project3{
+        position: relative;
+        top: 1480px;
+        left: 30px;
+        width: 350px;
+        height: 410px;
+      }
+      .project3 img{
+        padding: 10px;
+        width: 120px;
+        height: 140px;
+        float:left;
+      }
+      .project3 button{
+        margin-bottom: 10px;
+      }
+      .blog{
+        position: relative;
+        top: 205px;
+        left: 30px;
+        width: 350px;
+        height: 60px;
+      }
+      .Blogs{
+        position: relative;
+        top: 230px;
+        left: 30px;
+        width: 350px;
+        height:500px;
+      }
+      .Blogs img{
+        width: 200px;
+        padding-left: 10px;
+      }
+      footer{
+        position: relative;
+        top: 300px;
+        left:60px;
+      }
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="personal-details">
+      <img class="Mypic" src = "pic.PNG">
+      <figcaption style="color:#484848">Namitha Tenkanidiyoor</figcaption>
+      <figcaption style="font-weight:lighter; font-size:12px; color:grey">Front-end developer</figcaption>
+          <div class="email">
+            <img src='email-24px.svg'>
+            <p style="font-size:12px; color:grey">xyz.t4@gmail.com</p>
+          </div>
+          <div class="phone">
+            <img src ='call-24px.svg'>
+            <p style="font-size:12px; color:grey">(+1) 123 456 3235</p>
+          </div>
+          <div class="intro">
+            <p>Self-motivated developer, who is willing to learn  and create outstanding<br> UI applications.</p>
+            <p>Donec aliquam est dui, vel vestibulum diam sollicitudim id. Quisque<br> feugiat malesuada molestie.</p>
+          </div>
+      </div>
+  <div class="slidecontainer">
+    <p style="color:#484848">FRONT END</p>
+    <p style='font-size:12px; color:grey'>Javascript</p>
+      <div class="container">
+          <div class="skills Js"></div>
+      </div>
+    <p style='font-size:12px; color:grey'>HTML</p>
+      <div class="container">
+          <div class="skills html"></div>
+      </div>
+    <p style='font-size:12px; color:grey'>Css</p>
+      <div class="container">
+          <div class="skills css"></div>
+      </div>
+    <p style='font-size:12px; color:grey'>React</p>
+      <div class="container">
+          <div class="skills react"></div>
+      </div>
+  </div>
+<div class="project">
+    <p style="color:#484848">Projects(3)</p>
+</div>
+<div class="project1">
+     <img src="new_recipe.PNG">
+     <p><a href='#'>#HTML</a>  <a href='#'>#CSS</a> <a href='#'>#responsive</a></p>
+     <p style="color:#484848">Recipe Blog</p>
+     <p style='font-size:12px; color:grey'>In this project, I work with HTML and CSS to create a responsive page. The design is from challenges.io.
+      A simple and modern looking blog page.</p>
+      <button onclick="location.href='https://namitha045.github.io/New_Repo/Cha_04/Cha_04.html'" style="background-color: #2196F3; color: white; border-color:#2196F3; border-style:hidden">Demo</button>
+      <button onclick="location.href='https://github.com/Namitha045/New_Repo/tree/master/Cha_04'" style="background-color: #FFFAFA; color: #2196F3; border-color:#2196F3">Code</button>
+</div>
+<div class="project2">
+     <img src="new_edie.PNG">
+     <p><a href='#'>#HTML</a>  <a href='#'>#CSS</a> <a href='#'>#responsive</a></p>
+     <p style="color:#484848">Landing Page</p>
+     <p style='font-size:12px; color:grey'>In this project, I work with HTML and CSS to create a landing page with navigation
+      to different parts within the page.</p>
+      <button onclick="location.href='https://namitha045.github.io/New_Repo/Cha_07/index.html'" style="background-color: #2196F3; color: white; border-color:#2196F3; border-style:hidden">Demo</button>
+      <button onclick="location.href='https://github.com/Namitha045/New_Repo/tree/master/Cha_07'" style="background-color: #FFFAFA; color: #2196F3; border-color:#2196F3">Code</button>
+</div>
+<div class="project3">
+     <img src="new_checkout.PNG">
+     <p><a href='#'>#HTML</a>  <a href='#'>#CSS</a> <a href='#'>#responsive</a></p>
+     <p style="color:#484848">Checkout Page</p>
+     <p style='font-size:12px; color:grey'>In this project, I work with HTML and CSS to create a checkout page. This design is from challenges.io.
+       A simple and elegant looking design</p>
+      <button onclick="location.href='https://namitha045.github.io/New_Repo/Cha_06/index.html'" style="background-color: #2196F3; color: white; border-color:#2196F3; border-style:hidden">Demo</button>
+      <button onclick="location.href='https://github.com/Namitha045/New_Repo/tree/master/Cha_06'" style="background-color: #FFFAFA; color: #2196F3; border-color:#2196F3">Code</button>
+</div>
+<div class="Experience">
+    <p>Experiences</p>
+    <h5 style="color:#484848"> Front-end Developer</h5>
+    <img src="html_css_logo.PNG">
+    <p style='font-size:10px;color:grey'>Feb-2016 - July 2016</p>
+    <p style='font-size:12px; color:grey'> Developed a value add monitoring dashboard for client using html, css and little bit of Javascript. This was highly appreciated by clients.</p>
+    <h5 style="color:#484848"> Django Developer</h5>
+        <img src="django_logo.PNG">
+      <p style='font-size:10px;color:grey'>Feb-2018- current</p>
+      <p style='font-size:12px; color:grey'> This project involved working as backend developer with data handling by creating various models, forms and involved less of front end which used
+        basic Html and css.</p>
+    <h5 style="color:#484848">Full-stack Developer</h5>
+    <img src="javscript_logo.PNG">
+    <p style='font-size:12px; color:grey'>Developed a retail website for a small business owner which involved Django , Html, Css and Javascript.</p>
+</div>
+
+<div class='Hobbies'>
+  <p>Hobbies</p>
+  <h5 style="color:#484848">Craft making</h5>
+  <img src="craft.PNG">
+  <p style='font-size:12px;color:grey'> I love making small paper, wooden , jewellery crafts in my free time.</p>
+  <h5 style="color:#484848">Yoga</h5>
+  <img src="yoga.PNG">
+  <p style='font-size:12px;color:grey'> Keeps you healthy and calm.</p>
+</div>
+<div class="blog">
+    <p style="color:#484848">Blogs(1)</p>
+</div>
+  <div class="Blogs">
+    <p>Blog</p>
+    <a>
+    <p>How to organize your Css</p>
+    <img src="blog.PNG">
+    <p style='font-size:12px; color:grey'> In this article I tell story about Prion en justo sit amet lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi.</p>
+    <p style='font-size:12px; color:grey'> Donec aliquam est dui, vel vestibulum diam sollicitudim id. Quisque feugiat malesuada molestie.</p></a>
+ </div>
+      <footer>
+        <p style='font-size:12px; color:grey'>Namitha045@DevChallenges.io</p>
+      </footer>
+    </body>
+  </html>
